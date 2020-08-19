@@ -108,7 +108,7 @@ $ yarn commit
 ## CI configuration
 
 - Set the environment variable API_ADDRESS (in the CI environment variable section) with the server address.
-- The only command needed to be put on CI is 'yarn setup' which tests formatting with prettier, eslint errors, typescript errors and all tests.
+- The only command needed to be put on CI is 'yarn setup' which tests formatting with prettier, eslint errors and typescript errors.
 
 ## Deploy
 

@@ -15,7 +15,7 @@
     "check-format": "yarn prettier --list-different",
     "check-types": "yarn tsc",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.md,.mdx .",
-    "validate": "npm-run-all --parallel check-types check-format lint",
+    "validate": "node ./node_modules/npm-run-all/bin/npm-run-all --parallel check-types check-format lint",
     "setup": "yarn && yarn validate",
     "storybook": "start-storybook -p 3001 -c storybook --docs"
   },

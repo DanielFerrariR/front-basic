@@ -1,0 +1,53 @@
+import { Box, Typography } from 'src/components/atoms'
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+
+<Meta title="Components/atoms/Typography" component={Typography} />
+
+# Typography
+
+This component was created from Typography of [@material-ui](https://material-ui.com).
+
+[Typography API](https://material-ui.com/api/typography) (the color prop was replaced, check on [Extra Props](#extra-props))
+
+We also use the following additional props from [@material-ui/system/basics](https://material-ui.com/system/basics):
+
+[Borders API](https://material-ui.com/system/borders)
+
+[Pallete API](https://material-ui.com/system/pallete)
+
+[Sizing API](https://material-ui.com/system/sizing)
+
+[Spacing API](https://material-ui.com/system/spacing)
+
+[Typography API](https://material-ui.com/system/typography)
+
+[CSS](https://material-ui.com/system/basics/#css-property)
+
+<Preview>
+  <Story name="typography">
+    <Box display="flex" flexDirection="column">
+      <Typography variant="h1">h1</Typography>
+      <Typography variant="h2">h2</Typography>
+      <Typography variant="h3">h3</Typography>
+      <Typography variant="h4">h4</Typography>
+      <Typography variant="h5">h5</Typography>
+      <Typography variant="h6">h6</Typography>
+      <Typography variant="subtitle1">subtitle1</Typography>
+      <Typography variant="subtitle2">subtitle2</Typography>
+      <Typography variant="body1">body1</Typography>
+      <Typography variant="body2">body2</Typography>
+      <Typography variant="button">button</Typography>
+      <Typography variant="caption">caption</Typography>
+      <Typography variant="overline">overline</Typography>
+    </Box>
+  </Story>
+</Preview>
+
+## Extra Props
+
+| Name      | Description                                                                                                                                    | Default    |
+| --------- | :--------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| component | The component used for the root node. Either a string to use a HTML element or a component. Overrides the behavior of the variantMapping prop. |            |
+| to        | Path to a new route (can only be used if the component is receving Link from react-router-dom in the component prop)                           | undefined  |
+| htmlFor   | Specifies which form element a label is bound to.                                                                                              | undefined  |
+| color     | The color of the component. This prop was replaced by the material-ui/system one.                                                              | (original) |

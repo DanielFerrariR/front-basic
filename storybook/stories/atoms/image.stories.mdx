@@ -1,0 +1,32 @@
+import { Image } from 'src/components/atoms'
+import { logo } from 'src/images'
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+
+<Meta title="Components/atoms/Image" component={Image} />
+
+# Image
+
+This component was created from styled of [@material-ui](https://material-ui.com).
+
+[Image API](https://material-ui.com/api/image/)
+
+We also use the following additional props from [@material-ui/system/basics](https://material-ui.com/system/basics/):
+
+[Sizing API](https://material-ui.com/system/sizing)
+
+[Spacing API](https://material-ui.com/system/spacing)
+
+[CSS](https://material-ui.com/system/basics/#css-property)
+
+<Preview>
+  <Story name="image">
+    <Image
+      src={logo}
+      alt="Logo"
+      css={{
+        animation: 'fadeAnimation 2s linear infinite',
+        opacity: '0'
+      }}
+    />
+  </Story>
+</Preview>

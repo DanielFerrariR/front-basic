@@ -27,7 +27,8 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.mdx'],
     alias: {
       'react-dom': '@hot-loader/react-dom',
-      src: path.resolve(__dirname, 'src')
+      src: path.resolve(__dirname, 'src'),
+      storybook: path.resolve(__dirname, 'storybook')
     }
   },
   plugins: [

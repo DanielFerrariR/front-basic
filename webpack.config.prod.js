@@ -16,7 +16,8 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.mdx'],
     alias: {
-      src: path.resolve(__dirname, 'src')
+      src: path.resolve(__dirname, 'src'),
+      storybook: path.resolve(__dirname, 'storybook')
     }
   },
   module: {
@@ -34,10 +35,6 @@ module.exports = {
           name: '[name].[ext]',
           outputPath: 'images'
         }
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
       }
     ]
   },

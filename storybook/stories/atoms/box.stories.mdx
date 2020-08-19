@@ -1,0 +1,47 @@
+import { Box } from 'src/components/atoms'
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+
+<Meta title="Components/atoms/Box" component={Box} />
+
+# Box
+
+This component was created from Box of [@material-ui](https://material-ui.com).
+
+[Box API](https://material-ui.com/api/box)
+
+We also use the following additional props from [@material-ui/system/basics](https://material-ui.com/system/basics):
+
+[Borders API](https://material-ui.com/system/borders)
+
+[Display API](https://material-ui.com/system/display)
+
+[Flexbox API](https://material-ui.com/system/flexbox)
+
+[Pallete API](https://material-ui.com/system/pallete)
+
+[Positions API](https://material-ui.com/system/positions)
+
+[Shadows API](https://material-ui.com/system/shadows)
+
+[Sizing API](https://material-ui.com/system/sizing)
+
+[Spacing API](https://material-ui.com/system/spacing)
+
+[Typography API](https://material-ui.com/system/typography)
+
+[CSS](https://material-ui.com/system/basics/#css-property)
+
+[Breakpoints](https://material-ui.com/system/basics/#collocation)
+
+<Preview>
+  <Story name="box">
+    <Box bgcolor="primary.main" width={200} height={200} />
+  </Story>
+</Preview>
+
+## Extra Props
+
+| Name      | Description                                                                                                          | Default   |
+| --------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
+| component | The component used for the root node. Either a string to use a HTML element or a component.                          | 'div'     |
+| to        | Path to a new route (can only be used if the component is receving Link from react-router-dom in the component prop) | undefined |

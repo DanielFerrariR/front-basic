@@ -42,14 +42,14 @@
     ],
     "react-hooks/exhaustive-deps": "off",
     "jsx-a11y/anchor-is-valid": "off",
-    "react/no-array-index-key": "off",
     "no-irregular-whitespace": "off",
     "prefer-promise-reject-errors": "off",
     "eqeqeq": "off",
     "no-restricted-syntax": "off",
     "no-await-in-loop": "off",
     "no-new-func": "off",
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "react/no-array-index-key": "off"
   },
   "settings": {
     "import/resolver": {
@@ -104,7 +104,9 @@
           {
             "devDependencies": ["typings/**/*.*", "/*.*"]
           }
-        ]
+        ],
+        "react/no-array-index-key": "off",
+        "react-hooks/exhaustive-deps": "off"
       }
     }
   ]

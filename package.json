@@ -70,6 +70,7 @@
     "babel-loader": "8.1.0",
     "clean-webpack-plugin": "3.0.0",
     "commitizen": "4.1.2",
+    "css-loader": "4.2.1",
     "dotenv-webpack": "2.0.0",
     "eslint": "7.5.0",
     "eslint-config-airbnb": "18.2.0",
@@ -92,6 +93,7 @@
     "remark-preset-lint-recommended": "4.0.1",
     "remark-preset-prettier": "0.4.0",
     "serve": "11.3.2",
+    "style-loader": "1.2.1",
     "svg-url-loader": "6.0.0"
   }
 }

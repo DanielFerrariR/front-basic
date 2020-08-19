@@ -35,6 +35,10 @@ module.exports = {
           name: '[name].[ext]',
           outputPath: 'images'
         }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },

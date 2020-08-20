@@ -58,12 +58,14 @@ const Home: React.FC = () => {
                 p={1}
                 width={166}
                 height={166}
+                aria-label="Instagram Photo"
               >
                 <Image
                   src={each.imagens.thumbnail.url}
                   height={each.imagens.thumbnail.height}
                   width={each.imagens.thumbnail.width}
                   onMouseEnter={() => setOpenImageDetails(each.uid)}
+                  alt="Instagram Photo"
                 />
                 {openImageDetails === each.uid && (
                   <Box

@@ -45,7 +45,7 @@ const Home: React.FC = () => {
       <Image
         src={logo}
         alt="Logo"
-        width={{ xs: 120, sm: 150, md: 180, lg: 240, xl: 300 }}
+        width={{ xs: 120, sm: 150, md: 180, lg: 210, xl: 240 }}
         mb={3}
       />
       <Image />

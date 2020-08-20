@@ -54,19 +54,15 @@ const Home: React.FC = () => {
                     src={each.imagens.thumbnail.url}
                     height={each.imagens.thumbnail.height}
                     width={each.imagens.thumbnail.width}
-                    borderRadius={16}
                     onMouseEnter={() => setOpenImageDetails(each.uid)}
                   />
-                </a>
-                {openImageDetails === each.uid && (
-                  <a target="_blank" rel="noreferrer" href={each.link}>
+                  {openImageDetails === each.uid && (
                     <Box
                       position="absolute"
                       width={150}
                       left={8}
                       top={8}
                       height={150}
-                      borderRadius={16}
                       bgcolor="custom.overlayColor"
                       alignItems="center"
                       display="flex"
@@ -123,13 +119,13 @@ const Home: React.FC = () => {
                         </Typography>
                       </Box>
                     </Box>
-                  </a>
-                )}
+                  )}
+                </a>
               </Box>
             ))
           : [...Array(30).keys()].map((_each, index) => (
               <Box p={1} key={index}>
-                <Skeleton width={142} height={142} borderRadius={16} />
+                <Skeleton width={142} height={142} />
               </Box>
             ))}
       </Box>

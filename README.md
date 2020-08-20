@@ -17,6 +17,7 @@
 - [Tests](#tests)
 - [CI Configuration](#ci-configuration)
 - [Deploy](#deploy)
+- [Website](#website)
 
 ## Workspace
 

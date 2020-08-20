@@ -10,7 +10,7 @@ export const custom = {
   secondary: '#f50057',
   secondaryPlus: '#c51162',
   secondaryContrast: '#fff',
-  overlayColor: 'rgba(0, 0, 0, 0.6'
+  overlayColor: 'rgba(0, 0, 0, 0.6)'
 }
 
 const theme = responsiveFontSizes(
@@ -106,6 +106,15 @@ const theme = responsiveFontSizes(
     },
     shape: {
       borderRadius: 4
+    },
+    zIndex: {
+      mobileStepper: 1000,
+      speedDial: 1050,
+      appBar: 1100,
+      drawer: 1200,
+      modal: 1300,
+      snackbar: 1400,
+      tooltip: 1500
     },
     props: {},
     overrides: {

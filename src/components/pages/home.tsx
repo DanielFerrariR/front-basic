@@ -62,13 +62,11 @@ const Home: React.FC = () => {
                   <a target="_blank" rel="noreferrer" href={each.link}>
                     <Box
                       position="absolute"
-                      zIndex="2000"
                       width={150}
                       left={8}
                       top={8}
                       height={150}
                       borderRadius={16}
-                      style={{ backgroundColor: 'rgba(0, 0, 0, 0.6' }}
                       bgcolor="custom.overlayColor"
                       alignItems="center"
                       display="flex"

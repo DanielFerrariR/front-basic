@@ -31,25 +31,19 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": [
-          "spec/**/*.*",
-          "electron/**/*.*",
-          "storybook/**/*.*",
-          "typings/**/*.*",
-          "/*.*"
-        ]
+        "devDependencies": ["storybook/**/*.*", "typings/**/*.*", "/*.*"]
       }
     ],
     "react-hooks/exhaustive-deps": "off",
     "jsx-a11y/anchor-is-valid": "off",
+    "react/no-array-index-key": "off",
     "no-irregular-whitespace": "off",
     "prefer-promise-reject-errors": "off",
     "eqeqeq": "off",
     "no-restricted-syntax": "off",
     "no-await-in-loop": "off",
     "no-new-func": "off",
-    "consistent-return": "off",
-    "react/no-array-index-key": "off"
+    "consistent-return": "off"
   },
   "settings": {
     "import/resolver": {
@@ -102,11 +96,23 @@
         "import/no-extraneous-dependencies": [
           "error",
           {
-            "devDependencies": ["typings/**/*.*", "/*.*"]
+            "devDependencies": ["storybook/**/*.*", "typings/**/*.*", "/*.*"]
           }
         ],
+        "react-hooks/exhaustive-deps": "off",
+        "jsx-a11y/anchor-is-valid": "off",
         "react/no-array-index-key": "off",
-        "react-hooks/exhaustive-deps": "off"
+        "no-irregular-whitespace": "off",
+        "prefer-promise-reject-errors": "off",
+        "spaced-comment": "off",
+        "eqeqeq": "off",
+        "no-restricted-syntax": "off",
+        "no-await-in-loop": "off",
+        "tsdoc/syntax": "warn",
+        "@typescript-eslint/no-implied-eval": "off",
+        "no-new-func": "off",
+        "consistent-return": "off",
+        "@typescript-eslint/naming-convention": ["off"]
       }
     }
   ]

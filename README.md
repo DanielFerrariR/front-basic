@@ -107,7 +107,7 @@ $ yarn commit
 
 ## Tests
 
-- Was just a page, but could use Cypress/Jest if was a bigger application.
+- It was just a page, but could use Cypress/Jest if it was a bigger application.
 
 ## CI configuration
 

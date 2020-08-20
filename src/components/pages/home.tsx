@@ -45,7 +45,6 @@ const Home: React.FC = () => {
         width={{ xs: 120, sm: 150, md: 180, lg: 210, xl: 240 }}
         mb={3}
       />
-      <Image />
       <Box display="flex" justifyContent="center" flexWrap="wrap" width={1}>
         {feed
           ? feed.medias.map((each) => (
@@ -70,6 +69,7 @@ const Home: React.FC = () => {
                       height={150}
                       borderRadius={16}
                       style={{ backgroundColor: 'rgba(0, 0, 0, 0.6' }}
+                      bgcolor="custom.overlayColor"
                       alignItems="center"
                       display="flex"
                       flexDirection="column"

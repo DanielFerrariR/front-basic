@@ -1,33 +1,11 @@
 import { Palette, PaletteOptions } from '@material-ui/core/styles/createPalette'
 
 declare module '@material-ui/core/styles/createPalette' {
-  interface CustomPaletteColorOptions {
-    primaryMinus: string
-    primary: string
-    primaryPlus: string
-    primaryContrast: string
-    secondaryMinus: string
-    secondary: string
-    secondaryPlus: string
-    secondaryContrast: string
-  }
-
-  interface CustomPaletteColor {
-    primaryMinus?: string
-    primary?: string
-    primaryPlus?: string
-    primaryContrast?: string
-    secondaryMinus?: string
-    secondary?: string
-    secondaryPlus?: string
-    secondaryContrast?: string
-  }
-
   interface PaletteOptions {
-    custom?: CustomPaletteColorOptions
+    custom?: typeof import('src/styles').custom
   }
 
   interface Palette {
-    custom: CustomPaletteColor
+    custom: typeof import('src/styles').custom
   }
 }

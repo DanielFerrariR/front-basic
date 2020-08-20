@@ -1,7 +1,7 @@
 import { responsiveFontSizes, createMuiTheme } from '@material-ui/core'
 import { background } from 'src/images'
 
-const custom = {
+export const custom = {
   primaryMinus: '#7986cb',
   primary: '#3f51b5',
   primaryPlus: '#303f9f',
@@ -9,7 +9,8 @@ const custom = {
   secondaryMinus: '#ff4081',
   secondary: '#f50057',
   secondaryPlus: '#c51162',
-  secondaryContrast: '#fff'
+  secondaryContrast: '#fff',
+  overlayColor: 'rgba(0, 0, 0, 0.6'
 }
 
 const theme = responsiveFontSizes(

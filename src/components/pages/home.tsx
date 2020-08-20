@@ -11,7 +11,6 @@ import { useSelector, useDispatch } from 'src/store'
 import { fetchFeed } from 'src/store/feed'
 import { Favorite, CalendarToday, Chat } from '@material-ui/icons'
 import { formatDate } from 'src/utils'
-import { useMediaQuery, useTheme } from '@material-ui/core'
 
 const Home: React.FC = () => {
   const [openImageDetails, setOpenImageDetails] = useState<string | false>(
@@ -19,8 +18,6 @@ const Home: React.FC = () => {
   )
   const feed = useSelector((state) => state.feed)
   const dispatch = useDispatch()
-  const theme = useTheme()
-  const matches = useMediaQuery(theme.breakpoints.up('sm'))
 
   useEffect(() => {
     document.title = 'Squid Instagram Feed | Home'
@@ -62,7 +59,7 @@ const Home: React.FC = () => {
                     onMouseEnter={() => setOpenImageDetails(each.uid)}
                   />
                 </a>
-                {openImageDetails === each.uid && matches && (
+                {openImageDetails === each.uid && (
                   <a target="_blank" rel="noreferrer" href={each.link}>
                     <Box
                       position="absolute"

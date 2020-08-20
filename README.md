@@ -128,7 +128,7 @@ $ yarn commit
 2. 'yarn build' command will compile all files and put them into dist folder.
 3. Install Apache. (I'm using XAMPP for this example. Link: <https://www.apachefriends.org/download.html>)
 4. Clean up htdocs folder of xampp/htdocs.
-5. Put all files from dist/web folder into xampp/htdocs folder.
+5. Put all files from dist folder into xampp/htdocs folder.
 6. Open XAMPP and, on the line of module apache, click on the 'Start' button.
 7. Access 'localhost' from your browser and see that the page loads correctly. It will still not work if you try to access a route manually (like 'localhost/login'). See below how to fix it.
 

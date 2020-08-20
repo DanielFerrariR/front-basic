@@ -21,7 +21,7 @@ const theme = create({
   inputTextColor: 'black',
   inputBorderRadius: 4,
   brandTitle: 'Squid Storybook',
-  brandUrl: 'https://squid.com',
+  brandUrl: 'https://squidit.com.br',
   brandImage: logo
 })
 

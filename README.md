@@ -7,7 +7,7 @@
 </a>
 
 <a align="center" href="https://travis-ci.com/github/DanielFerrariR/front-basic">
-  <img src="https://travis-ci.com/DanielFerrariR/front-basic.svg?branch=master&status=started" />
+  <img src="https://travis-ci.com/DanielFerrariR/front-basic.svg?branch=master" />
 </a>
 
 ## TOC

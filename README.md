@@ -10,6 +10,13 @@
   <img src="https://travis-ci.com/DanielFerrariR/front-basic.svg?branch=master" />
 </a>
 
+This application was overengineered to show how to properly create a high quality react project with webpack. It could be improved with:
+
+- Tests (Jest/Cypress)
+- Webpack optimizations to properly pass lighthouse tests (manifest.json, robot.txt, mimify, etc.).
+
+I can also show how to properly structure these missing topics.
+
 ## TOC
 
 - [Workspace](#workspace)

@@ -1,7 +1,7 @@
 import { responsiveFontSizes, createMuiTheme } from '@material-ui/core'
 import { background } from 'src/images'
 
-export const custom = {
+const custom = {
   primaryMinus: '#7986cb',
   primary: '#3f51b5',
   primaryPlus: '#303f9f',

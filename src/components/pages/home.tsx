@@ -48,84 +48,92 @@ const Home: React.FC = () => {
       <Box display="flex" justifyContent="center" flexWrap="wrap" width={1}>
         {feed
           ? feed.medias.map((each) => (
-              <Box position="relative" key={each.uid} p={1}>
-                <a target="_blank" rel="noreferrer" href={each.link}>
-                  <Image
-                    src={each.imagens.thumbnail.url}
-                    height={each.imagens.thumbnail.height}
-                    width={each.imagens.thumbnail.width}
-                    onMouseEnter={() => setOpenImageDetails(each.uid)}
-                  />
-                  {openImageDetails === each.uid && (
+              <Box
+                component="a"
+                target="_blank"
+                rel="noreferrer"
+                href={each.link}
+                position="relative"
+                key={each.uid}
+                p={1}
+                width={166}
+                height={166}
+              >
+                <Image
+                  src={each.imagens.thumbnail.url}
+                  height={each.imagens.thumbnail.height}
+                  width={each.imagens.thumbnail.width}
+                  onMouseEnter={() => setOpenImageDetails(each.uid)}
+                />
+                {openImageDetails === each.uid && (
+                  <Box
+                    position="absolute"
+                    width={150}
+                    left={8}
+                    top={8}
+                    height={150}
+                    bgcolor="custom.overlayColor"
+                    alignItems="center"
+                    display="flex"
+                    flexDirection="column"
+                    justifyContent="center"
+                    onMouseLeave={() => setOpenImageDetails(false)}
+                  >
+                    <Typography color="common.white" variant="caption">
+                      @{each.usuario.nome}
+                    </Typography>
                     <Box
-                      position="absolute"
-                      width={150}
-                      left={8}
-                      top={8}
-                      height={150}
-                      bgcolor="custom.overlayColor"
-                      alignItems="center"
                       display="flex"
-                      flexDirection="column"
-                      justifyContent="center"
-                      onMouseLeave={() => setOpenImageDetails(false)}
+                      alignItems="center"
+                      color="common.white"
+                      fontSize={12}
                     >
-                      <Typography color="common.white" variant="caption">
-                        @{each.usuario.nome}
+                      <Favorite fontSize="inherit" />
+                      <Typography
+                        color="common.white"
+                        ml={0.5}
+                        variant="caption"
+                      >
+                        {each.upvotes}
                       </Typography>
-                      <Box
-                        display="flex"
-                        alignItems="center"
-                        color="common.white"
-                        fontSize={12}
-                      >
-                        <Favorite fontSize="inherit" />
-                        <Typography
-                          color="common.white"
-                          ml={0.5}
-                          variant="caption"
-                        >
-                          {each.upvotes}
-                        </Typography>
-                      </Box>
-                      <Box
-                        display="flex"
-                        alignItems="center"
-                        color="common.white"
-                        fontSize={12}
-                      >
-                        <Chat fontSize="inherit" />
-                        <Typography
-                          color="common.white"
-                          ml={0.5}
-                          variant="caption"
-                        >
-                          {each.comentarios}
-                        </Typography>
-                      </Box>
-                      <Box
-                        display="flex"
-                        alignItems="center"
-                        color="common.white"
-                        fontSize={12}
-                      >
-                        <CalendarToday fontSize="inherit" />
-                        <Typography
-                          color="common.white"
-                          ml={0.5}
-                          variant="caption"
-                        >
-                          {formatDate(new Date(each.obtidoEm))}
-                        </Typography>
-                      </Box>
                     </Box>
-                  )}
-                </a>
+                    <Box
+                      display="flex"
+                      alignItems="center"
+                      color="common.white"
+                      fontSize={12}
+                    >
+                      <Chat fontSize="inherit" />
+                      <Typography
+                        color="common.white"
+                        ml={0.5}
+                        variant="caption"
+                      >
+                        {each.comentarios}
+                      </Typography>
+                    </Box>
+                    <Box
+                      display="flex"
+                      alignItems="center"
+                      color="common.white"
+                      fontSize={12}
+                    >
+                      <CalendarToday fontSize="inherit" />
+                      <Typography
+                        color="common.white"
+                        ml={0.5}
+                        variant="caption"
+                      >
+                        {formatDate(new Date(each.obtidoEm))}
+                      </Typography>
+                    </Box>
+                  </Box>
+                )}
               </Box>
             ))
           : [...Array(30).keys()].map((_each, index) => (
               <Box p={1} key={index}>
-                <Skeleton width={142} height={142} />
+                <Skeleton width={150} height={150} />
               </Box>
             ))}
       </Box>

@@ -32,6 +32,9 @@ interface ExtraProps {
   component?: React.ReactElement | typeof Link | string
   to?: string
   ref?: any
+  target?: string
+  rel?: string
+  href?: string
 }
 
 const StyledBox = styled(({ newRef, newComponent, ...props }) => (

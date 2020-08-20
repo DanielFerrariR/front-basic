@@ -6,6 +6,10 @@
   <img src="https://img.shields.io/badge/version-1.0.0-blue" />
 </a>
 
+<a align="center" href="https://travis-ci.com/github/DanielFerrariR/front-basic">
+  <img src="https://travis-ci.com/DanielFerrariR/front-basic.svg?branch=master&status=started" />
+</a>
+
 ## TOC
 
 - [Workspace](#workspace)
@@ -108,7 +112,7 @@ $ yarn commit
 ## CI configuration
 
 - Set the environment variable API_ADDRESS (in the CI environment variable section) with the server address.
-- The only command needed to be put on CI is 'yarn setup' which tests formatting with prettier, eslint errors and typescript errors.
+- The only command needed to be put on CI is 'yarn setup' which tests formatting with prettier, eslint errors, typescript errors and build errors.
 
 ## Deploy
 
